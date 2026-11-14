@@ -1,4 +1,4 @@
-# Test Plan — OpenCart (Frontend)
+# Test Plan : OpenCart (Frontend)
 
 | Document Information | Details |
 | :--- | :--- |
@@ -117,12 +117,12 @@ This project follows an iterative **Agile methodology** driven by requirement-ba
 
 | Day | Milestone / Task | Owner | Estimated Effort |
 | :--- | :--- | :--- | :--- |
-| **Day 25** | Project Understanding, Explore AUT, FRS Review, Overview & Test Plan | Ali Alomari | 1 Day |
-| **Day 26** | Requirement Analysis & Writing Positive/Negative Test Scenarios | Ali Alomari | 1 Day |
-| **Day 27** | Detailed Test Case Design, Test Data Prep, & RTM Mapping | Ali Alomari | 1 Day |
-| **Day 28** | Test Execution (Pass / Fail / Blocked) & Evidence Collection | Ali Alomari | 1 Day |
-| **Day 29** | Defect Logging (Bug Reports), Re-Testing, & Regression Testing | Ali Alomari | 1 Day |
-| **Day 30** | Final Documentation (`Test-Summary-Report.md`, `Regression-Checklist.md`) & GitHub/Jira Publish | Ali Alomari | 1 Day |
+| **Day 1** | Project Understanding, Explore AUT, FRS Review, Overview & Test Plan | Ali Alomari | 1 Day |
+| **Day 2** | Requirement Analysis & Writing Positive/Negative Test Scenarios | Ali Alomari | 1 Day |
+| **Day 3** | Detailed Test Case Design, Test Data Prep, & RTM Mapping | Ali Alomari | 1 Day |
+| **Day 4** | Test Execution (Pass / Fail / Blocked) & Evidence Collection | Ali Alomari | 1 Day |
+| **Day 5** | Defect Logging (Bug Reports), Re-Testing, & Regression Testing | Ali Alomari | 1 Day |
+| **Day 6** | Final Documentation (`Test-Summary-Report.md`, `Regression-Checklist.md`) & GitHub/Jira Publish | Ali Alomari | 1 Day |
 
 ---
 
