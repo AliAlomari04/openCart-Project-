@@ -1,4 +1,4 @@
-# Test Scenarios — OpenCart
+# Test Scenarios 
 
 | Document Information | Details |
 | :--- | :--- |
