@@ -1,7 +1,7 @@
-# Project Overview — OpenCart (Frontend) Manual QA Project
+# OpenCart (Frontend) Manual QA Project
 
 ## 1. Project Description
-**OpenCart** is a free, open-source e-commerce platform designed for online merchants to build and customize online stores. This project focuses on testing the **OpenCart Default Storefront (Frontend)**, which defines how customers view, navigate, and interact with the store—from browsing product categories and comparing specifications to managing the shopping cart and completing the 6-step checkout process.
+**OpenCart** is a free, open-source e-commerce platform designed for online merchants to build and customize online stores. This project focuses on testing the **OpenCart Default Storefront (Frontend)**, which defines how customers view, navigate, and interact with the store .. from browsing product categories and comparing specifications to managing the shopping cart and completing the 6-step checkout process.
 
 * **Project Name:** OpenCart (Frontend)
 * **Domain:** E-Commerce / Online Retail
