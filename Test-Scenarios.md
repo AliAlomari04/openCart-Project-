@@ -51,15 +51,14 @@ All test scenarios in this document are directly derived from the **OpenCart Pro
 
 | Scenario ID | Type | Test Scenario Description (What to Test) | Priority | Est. TCs |
 | :---: | :---: | :--- | :---: | :---: |
-| `TS_001_01` | Positive | Verify registering a new account by providing only the mandatory fields (First Name, Last Name, E-Mail, Telephone, Password, Password Confirm, and Privacy Policy). | P0 (High) | 3 |
-| `TS_001_02` | Positive | Verify registering a new account by providing all mandatory and optional fields (including Newsletter Yes/No subscription). | P0 (High) | 3 |
+| `TS_001_01` | Positive | Verify registering a new account by providing only the mandatory fields (First Name, Last Name, E-Mail, Password, and Privacy Policy). | P0 (High) | 3 |
+| `TS_001_02` | Positive | Verify registering a new account by providing all mandatory and optional fields (including Newsletter subscription checkbox). | P0 (High) | 3 |
 | `TS_001_03` | Positive | Verify navigating to the Register Account page from multiple entry points (Header 'My Account -> Register', Login Page 'New Customer -> Continue', Right Column link, and Checkout Step 1). | P1 (Medium) | 4 |
 | `TS_001_04` | Negative | Verify appropriate field-level validation error messages when submitting the Register Account form with all mandatory fields left blank. | P0 (High) | 2 |
 | `TS_001_05` | Negative | Verify that account registration fails with a warning banner when using an already registered E-Mail address. | P0 (High) | 2 |
-| `TS_001_06` | Negative | Verify validation error when 'Password' and 'Password Confirm' fields do not match. | P0 (High) | 2 |
-| `TS_001_07` | Negative | Verify field validation for invalid formats and boundary lengths on E-Mail, Telephone, First Name, Last Name, and Password. | P1 (Medium) | 6 |
-| `TS_001_08` | Negative | Verify that registration is blocked with a warning banner when the 'Privacy Policy' checkbox is not selected. | P0 (High) | 2 |
-| `TS_001_09` | UI / Usability | Verify UI elements, placeholders, mandatory red asterisks (*), password masking, breadcrumb navigation, and page title on the Register Account page. | P2 (Low) | 3 |
+| `TS_001_06` | Negative | Verify field validation for invalid formats and boundary lengths on E-Mail, First Name, Last Name, and Password. | P1 (Medium) | 8 |
+| `TS_001_07` | Negative | Verify that registration is blocked with a warning banner when the 'Privacy Policy' checkbox is not selected. | P0 (High) | 2 |
+| `TS_001_08` | UI / Usability | Verify UI elements, placeholders, mandatory red asterisks (*), password masking, breadcrumb navigation, and page title on the Register Account page. | P2 (Low) | 3 |
 
 ---
 
