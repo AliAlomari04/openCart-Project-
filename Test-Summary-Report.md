@@ -9,7 +9,7 @@
 
 ## 1. Project Overview
 
-This Test Summary Report presents the final quality assurance results for the **OpenCart 4.x** storefront (`https://demo.opencart.com`). The objective of the testing effort was to validate core customer journeys—including account registration, authentication, password recovery, product search, product display pages (PDP), cart management, and 6-step checkout—as well as boundary conditions, input validations, session security, and responsive UI behavior.
+This Test Summary Report presents the final quality assurance results for the **OpenCart 4.x** storefront (`https://demo.opencart.com`). The objective of the testing effort was to validate core customer journeys including account registration, authentication, password recovery, product search, product display pages (PDP), cart management, and 6-step checkout as well as boundary conditions, input validations, session security, and responsive UI behavior.
 
 ---
 
