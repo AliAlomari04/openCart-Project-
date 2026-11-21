@@ -12,9 +12,16 @@ A structured **Manual, Functional, Exploratory, and Regression QA** project vali
 
 ## Project Overview
 
-* **Application Under Test:** OpenCart 4.x E-Commerce Storefront (`https://demo.opencart.com`)
-* **QA Scope:** End-to-end validation across 9 functional areas (`Register_Account`, `Login`, `Logout`, `Forgot_Password`, `Search`, `Product_Display_Page`, `Add_to_Cart`, `Shopping_Cart`, `Checkout`), supported by **3 Session-Based Test Management (SBTM)** exploratory charters and a prioritized **Regression Checklist**.
-* **Tools & Stack:** Jira, Xray Test Management, Google Chrome, Markdown Documentation.
+* **Application Under Test:** OpenCart 4.x E-Commerce Storefront
+* **Testing Approach:** Manual Functional, Boundary Value,
+  Exploratory, and Regression Test Preparation.
+* **Planned Coverage:** 19 functional modules documented
+  in the Test Scenarios.
+* **Executed Coverage:** 60 scripted test cases across
+  9 functional modules, supported by 3 exploratory
+  testing sessions.
+* **Environment:** Windows PC / Google Chrome.
+* **Tools:** Jira, Xray, Microsoft Excel, Git, GitHub.
 
 ---
 
@@ -35,10 +42,14 @@ A structured **Manual, Functional, Exploratory, and Regression QA** project vali
 
 | Deliverable | File | Description |
 | :--- | :--- | :--- |
-| **Test Summary Report** | [`Test-Summary-Report.md`](./Test-Summary-Report.md) | Final 7-section QA summary covering scope, execution results, defect analysis, module coverage, risks, and release recommendation. |
-| **Test Cases Suite** | [`Test-Cases.md`](./Test-Cases.md) | Complete index of all 60 unique test cases (`TC_001`–`TC_060`) grouped by module with direct Jira issue links. |
-| **Bug Summary** | [`Bug-Summary.md`](./Bug-Summary.md) | Master defects log (`PNCRT-90`–`PNCRT-97`) with severity, priority, status, module, and direct Jira links. |
-| **Regression Checklist** | [`regression_checklist.md`](./regression_checklist.md) | 17 prioritized regression checks (`P1` High, `P2` Medium, `P3` Low) for post-fix and build verification. |
+| Project Overview | `Project-Overview.md` | Project objectives, scope, and application details. |
+| Application Features | `Application-Features.md` | Functional feature breakdown and static testing observations. |
+| Test Plan | `Test-Plan.md` | Testing strategy, scope, environment, and criteria. |
+| Test Scenarios | `Test-Scenarios.md` | 117 detailed scenarios across 19 functional modules. |
+| Test Cases | `Test-Cases.md` | Index of 60 executed scripted test cases. |
+| Bug Summary | `Bug-Summary.md` | Summary of 8 reported defects. |
+| Test Summary Report | `Test-Summary-Report.md` | Execution results, defect analysis, risks, and final recommendation. |
+| Regression Checklist | `regression_checklist.md` | 17 prioritized regression checks prepared for future execution. |
 
 ---
 
@@ -49,7 +60,22 @@ A structured **Manual, Functional, Exploratory, and Regression QA** project vali
 * **Input Validation & Account/Auth Edge Cases (`PNCRT-90`, `PNCRT-91`, `PNCRT-96`, `PNCRT-94`, `PNCRT-97`):** Password accepts 3 characters below the minimum of 4 (`PNCRT-90`); no warning after >5 failed logins (`PNCRT-91`); case-sensitive email uniqueness check on registration (`PNCRT-96`); silent failure on reviews under 25 characters (`PNCRT-94`); and reusing the exact current password (`PNCRT-97`).
 
 ---
-
 ## Release Recommendation
 
-**Conditional Release:** Core storefront flows function reliably (**91.67%** pass rate), but releasing to production should be gated on resolving `Major` defects especially empty mandatory options (`PNCRT-92`), cart quantity/total calculation issues (`PNCRT-95`, `PNCRT-93`), and case-sensitive duplicate account registration (`PNCRT-96`) followed by a run of the [`regression_checklist.md`](./regression_checklist.md).
+**Not Recommended for Production Release**
+
+Although 55 out of 60 scripted test cases passed
+(91.67%), 8 unresolved defects were identified and
+documented during testing.
+
+Several defects affect important customer journeys,
+including product selection, cart quantity validation,
+and account registration.
+
+The application should not be considered ready for
+production release until the critical functional issues
+are addressed and successfully retested.
+
+The prepared regression checklist (17 checks) should
+also be executed against the updated build to verify
+that existing functionality remains stable.
