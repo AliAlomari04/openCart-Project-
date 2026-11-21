@@ -38,8 +38,7 @@ A structured **Manual, Functional, Exploratory, and Regression QA** project vali
 | **Test Summary Report** | [`Test-Summary-Report.md`](./Test-Summary-Report.md) | Final 7-section QA summary covering scope, execution results, defect analysis, module coverage, risks, and release recommendation. |
 | **Test Cases Suite** | [`Test-Cases.md`](./Test-Cases.md) | Complete index of all 60 unique test cases (`TC_001`–`TC_060`) grouped by module with direct Jira issue links. |
 | **Bug Summary** | [`Bug-Summary.md`](./Bug-Summary.md) | Master defects log (`PNCRT-90`–`PNCRT-97`) with severity, priority, status, module, and direct Jira links. |
-| **Regression Checklist** | [`Regression-Checklist.md`](./Regression-Checklist.md) | 17 prioritized regression checks (`P1` High, `P2` Medium, `P3` Low) for post-fix and build verification. |
-| **Raw Exports** | [`Jira.csv`](./Jira.csv), [`Jirabugs.csv`](./Jirabugs.csv), [`execution.csv`](./execution.csv) | Source exports from Jira for full traceability and auditability. |
+| **Regression Checklist** | [`regression_checklist.md`](./regression_checklist.md) | 17 prioritized regression checks (`P1` High, `P2` Medium, `P3` Low) for post-fix and build verification. |
 
 ---
 
@@ -53,4 +52,4 @@ A structured **Manual, Functional, Exploratory, and Regression QA** project vali
 
 ## Release Recommendation
 
-**Conditional Release:** Core storefront flows function reliably (**91.67%** pass rate), but releasing to production should be gated on resolving `Major` defects especially empty mandatory options (`PNCRT-92`), cart quantity/total calculation issues (`PNCRT-95`, `PNCRT-93`), and case-sensitive duplicate account registration (`PNCRT-96`) followed by a run of the [`Regression-Checklist.md`](./Regression-Checklist.md).
+**Conditional Release:** Core storefront flows function reliably (**91.67%** pass rate), but releasing to production should be gated on resolving `Major` defects especially empty mandatory options (`PNCRT-92`), cart quantity/total calculation issues (`PNCRT-95`, `PNCRT-93`), and case-sensitive duplicate account registration (`PNCRT-96`) followed by a run of the [`regression_checklist.md`](./regression_checklist.md).
