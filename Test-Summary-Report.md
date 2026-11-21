@@ -18,7 +18,7 @@ This Test Summary Report presents the final quality assurance results for the **
 ### In-Scope
 * **Scripted Functional & Boundary Test Cases:** 60 test cases (`TC_001`–`TC_060`) executed across two test execution cycles (`OpenCart Execution - Day 1` and `OpenCart Execution - Day 2`) in Xray.
 * **Exploratory Testing (SBTM):** 3 time-boxed exploratory charters covering Registration & Account Security, Shopping & Checkout Flows, and Responsive UI / Cross-View Behavior.
-* **Regression Verification:** Prioritized regression checklist covering critical (`P1`), medium (`P2`), and low (`P3`) checks across storefront modules.
+* **Regression Test Preparation:** A prioritized regression checklist containing 17 checks (P1–P3) was prepared for future execution after defect fixes. Regression execution was not part of this testing cycle.
 
 ### Out-of-Scope / Limitations
 * Live payment gateway processing and real financial transactions on the public demo environment.
@@ -85,7 +85,9 @@ The 60 unique test cases (`TC_001`–`TC_060`) are distributed across 9 function
 
 ## 7. Testing Recommendation
 
-**Recommendation: Conditional Release (Hold until Major & Critical Validation/Cart Issues Are Addressed)**
+**Recommendation: Not Recommended for Production Release**
+
+The application should not be considered ready for production release until the identified Major defects affecting product selection, cart calculations, and account registration are resolved and successfully retested. The regression checklist should then be executed against the updated build.
 
 While **91.67% (55/60)** of scripted test cases passed and core happy-path flows work[cite: 3, 4], releasing to production with open `Major` issues—specifically empty mandatory product options (`PNCRT-92`), erroneous cart calculations/banners on invalid quantities (`PNCRT-95`, `PNCRT-93`), and case-sensitive email duplication (`PNCRT-96`)—carries unacceptable business and user-experience risk.
 
