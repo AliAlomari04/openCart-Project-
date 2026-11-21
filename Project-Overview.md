@@ -11,10 +11,16 @@
 ---
 
 ## 2. Project Objectives
-* Analyze the **Functional Requirement Specification (FRS)** and perform static requirement validation prior to test design.
-* Verify the end-to-end customer purchase flow and all 13 frontend modules defined in the FRS Information Architecture.
-* Design and execute comprehensive Test Scenarios and Test Cases covering positive, negative, and boundary conditions.
-* Log, prioritize, and track defects using **Jira / Xray** and structured Excel templates, followed by Re-testing and Regression testing.
+* Review the functional requirements and identify
+  the main customer-facing workflows.
+* Design test scenarios covering 19 functional modules
+  documented in the scenario analysis.
+* Execute 60 scripted test cases across 9 selected
+  functional modules.
+* Perform exploratory testing sessions to identify
+  additional usability, validation, and functional issues.
+* Document defects using Jira/Xray and prepare
+  regression checks for future verification.
 
 ---
 
