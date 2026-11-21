@@ -30,13 +30,24 @@ This Test Plan outlines the testing strategy, scope, methodology, environment, c
   * `Search`, `Category Product Listings`, `Product Compare`, and `Product Detail Page (PDP)`
   * `Add to Cart`, `Wish List`, `Shopping Cart`, and `Currencies`
   * `Checkout` (6-Step Flow), `My Account Page`, `Order History`, `Downloads`, and `Contact Us`
-* **Test Levels:**
-  * **Smoke / Sanity Testing:** Initial verification of core build stability and readiness.
-  * **Functional Testing (Black-Box):** Validating individual requirements using Equivalence Partitioning and Boundary Value Analysis.
-  * **Integration Testing:** Verifying combined end-to-end workflows (e.g., Search -> Add to Cart -> Checkout -> Order History).
-  * **Cross-Browser Compatibility Testing:** Verifying UI and functional support across Chrome, Edge, and Firefox.
-  * **Regression & Re-Testing:** Ensuring defect fixes work as expected and do not break existing functionality (Cart, Checkout Flow).
-  * **User Acceptance Testing (UAT):** End-to-end validation from an end-user perspective.
+### Test Levels & Planned Activities
+
+* **Smoke / Sanity Testing:** Initial verification
+  of core storefront functionality.
+* **Functional Testing (Black-Box):** Validation
+  of requirements using Equivalence Partitioning
+  and Boundary Value Analysis.
+* **Integration Testing:** Verification of combined
+  customer workflows such as Search -> Add to Cart
+  -> Checkout.
+* **Exploratory Testing:** Time-boxed sessions
+  targeting functional, validation, and usability risks.
+* **Re-Testing & Regression:** Planned for execution
+  after defect fixes. A regression checklist was prepared,
+  but execution was not part of the completed cycle.
+* **Cross-Browser Testing:** Identified as a potential
+  testing activity, but not included in the completed
+  execution results.
 
 ### 3.2 Out of Scope
 * **Third-Party Integrations & Payment Gateways:** Security, functional, and transaction processing inside external payment providers (e.g., PayPal, Stripe, Credit Card processors) or external shipping APIs.
@@ -94,9 +105,11 @@ This project follows an iterative **Agile methodology** driven by requirement-ba
 * **Configuration Management & Version Control:** Git & GitHub
 
 ### 7.2 Hardware & Software Environment
-* **Server Stack:** Apache Web Server, PHP 5.4+, MySQL Database
-* **Client OS:** Windows 10 / Windows 11 (64-bit)
-* **Supported Browsers:** Google Chrome (Latest), Microsoft Edge (Latest), Mozilla Firefox (Latest)
+
+* **Client OS:** Windows PC.
+* **Browser Used for Execution:** Google Chrome.
+* **Test Management:** Jira / Xray.
+* **Documentation:** Microsoft Excel and Markdown.
 
 ---
 
