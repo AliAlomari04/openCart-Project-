@@ -38,6 +38,19 @@ This Test Summary Report presents the final quality assurance results for the **
 
 ---
 
+### Responsive UI Testing
+
+Responsive behavior was tested using Google Chrome at
+different viewport sizes by manually resizing the viewport
+and selecting preset dimensions.
+
+The testing focused on layout consistency, element visibility,
+navigation, and usability across different screen sizes.
+
+
+---
+
+
 ## 3. Test Execution Summary
 
 All **60 scripted test cases** were executed across two execution runs in Xray with **0 test cases left unexecuted**:
