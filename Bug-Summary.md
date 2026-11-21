@@ -7,7 +7,7 @@
 
 ---
 
-## 📊 Defect Breakdown by Severity & Priority
+## Defect Breakdown by Severity & Priority
 
 | Severity | Count | Priority | Count | Status |
 | :--- | :---: | :--- | :---: | :--- |
@@ -17,7 +17,7 @@
 
 ---
 
-## 📋 Master Bugs Summary Table
+## Master Bugs Summary Table
 
 | Bug ID | Jira Key | Title | Module | Severity | Priority | Status | Jira Link |
 | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :--- |
