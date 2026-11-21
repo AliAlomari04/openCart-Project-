@@ -25,11 +25,22 @@ This Test Summary Report presents the final quality assurance results for the **
 * Backend admin panel configuration and server-level performance/load testing.
 * Public demo environment resets, shared test data states, and third-party edge restrictions (such as anti-bot/Cloudflare challenges on certain automated or repeated requests).
 
+### Execution Limitations
+
+- Cross-browser execution was not included in the
+  completed testing cycle.
+- Regression testing was not executed during this cycle.
+  A prioritized checklist containing 17 regression
+  checks was prepared for future execution after fixes.
+- The reported results represent the tested public demo
+  environment and may be affected by shared test data
+  and periodic environment resets.
+
 ---
 
 ## 3. Test Execution Summary
 
-All **60 scripted test cases** were executed across two execution runs in Xray with **0 test cases left unexecuted**[cite: 3, 4]:
+All **60 scripted test cases** were executed across two execution runs in Xray with **0 test cases left unexecuted**:
 
 | Execution Run | Total Tests | Passed | Failed | Not Executed | Pass Rate |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -37,9 +48,9 @@ All **60 scripted test cases** were executed across two execution runs in Xray w
 | **OpenCart Execution - Day 2** (`PNCRT-89`) | 30 | 27 | 3 | 0 | 90.00% |
 | **Total Execution** | **60** | **55** | **5** | **0** | **91.67%** |
 
-* **Execution Coverage:** 100% (60 / 60 scripted test cases executed)[cite: 3, 4].
-* **Overall Pass Rate:** 91.67% (55 Passed)[cite: 3, 4].
-* **Overall Fail Rate:** 8.33% (5 Failed)[cite: 3, 4].
+* **Execution Coverage:** 100% (60 / 60 scripted test cases executed).
+* **Overall Pass Rate:** 91.67% (55 Passed).
+* **Overall Fail Rate:** 8.33% (5 Failed).
 
 ---
 
@@ -58,7 +69,7 @@ A total of **8 unique defects** (`PNCRT-90` to `PNCRT-97`) were logged in Jira a
 
 ## 5. Module Coverage
 
-The 60 unique test cases (`TC_001`–`TC_060`) are distributed across 9 functional labels/modules as follows (with overall execution totals of **55 Passed** and **5 Failed** verified from Day 1 and Day 2 runs)[cite: 3, 4]:
+The 60 unique test cases (`TC_001`–`TC_060`) are distributed across 9 functional labels/modules as follows (with overall execution totals of **55 Passed** and **5 Failed** verified from Day 1 and Day 2 runs):
 
 | Module / Label | Scripted TCs | Executed | Notes & Related Defects |
 | :--- | :---: | :---: | :--- |
@@ -71,7 +82,7 @@ The 60 unique test cases (`TC_001`–`TC_060`) are distributed across 9 function
 | **Add_to_Cart** (`TC_040`–`TC_044`) | 5 | 5 | Home, category, compare, wish list & mandatory-option redirect checks |
 | **Shopping_Cart** (`TC_045`–`TC_052`) | 8 | 8 | Quantity recalculation, stock limit (`999999`) banner/totals (`PNCRT-95`), remove & checkout navigation |
 | **Checkout** (`TC_053`–`TC_060`) | 8 | 8 | 6-step checkout, delivery/billing address, step navigation, validations & out-of-stock block |
-| **Total** | **60** | **60** | **55 Passed / 5 Failed (0 Not Executed)**[cite: 3, 4] |
+| **Total** | **60** | **60** | **55 Passed / 5 Failed (0 Not Executed)**|
 
 ---
 
@@ -89,7 +100,7 @@ The 60 unique test cases (`TC_001`–`TC_060`) are distributed across 9 function
 
 The application should not be considered ready for production release until the identified Major defects affecting product selection, cart calculations, and account registration are resolved and successfully retested. The regression checklist should then be executed against the updated build.
 
-While **91.67% (55/60)** of scripted test cases passed and core happy-path flows work[cite: 3, 4], releasing to production with open `Major` issues—specifically empty mandatory product options (`PNCRT-92`), erroneous cart calculations/banners on invalid quantities (`PNCRT-95`, `PNCRT-93`), and case-sensitive email duplication (`PNCRT-96`)—carries unacceptable business and user-experience risk.
+While **91.67% (55/60)** of scripted test cases passed and core happy-path flows work, releasing to production with open `Major` issues—specifically empty mandatory product options (`PNCRT-92`), erroneous cart calculations/banners on invalid quantities (`PNCRT-95`, `PNCRT-93`), and case-sensitive email duplication (`PNCRT-96`)—carries unacceptable business and user-experience risk.
 
 Before signing off on a production release:
 1. Fix and re-test `PNCRT-92`, `PNCRT-95`, `PNCRT-93`, and `PNCRT-96` (and address remaining validation/security items `PNCRT-90`, `PNCRT-91`, `PNCRT-94`, `PNCRT-97`).
