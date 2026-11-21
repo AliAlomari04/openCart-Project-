@@ -6,7 +6,7 @@
 | **Author** | Ali Alomari|
 | **Reference Document** | OpenCart Functional Requirement Specification (FRS v1.0) |
 | **Total Modules Covered** | 19 Functional Modules (`TS_001` – `TS_019`) |
-| **Total Detailed Scenarios** | 118 Test Scenarios (Positive, Negative, Boundary, Integration, UI) |
+| **Total Detailed Scenarios** | 117 Test Scenarios (Positive, Negative, Boundary, Integration, UI) |
 | **Total Estimated Test Cases** | 349 Test Cases |
 
 ---
@@ -22,7 +22,7 @@ All test scenarios in this document are directly derived from the **OpenCart Pro
 
 | Parent ID | Module Name | FRS Section Ref | Priority | Detailed Scenarios | Est. Test Cases |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| `TS_001` | Register Account | `FRS 4.1.12` | P0 (High) | 9 | 27 |
+| `TS_001` | Register Account | `FRS 4.1.12` | P0 (High) | 8 | 27 |
 | `TS_002` | Login | `FRS 4.1.12` | P0 (High) | 8 | 23 |
 | `TS_003` | Logout | `FRS 4.1.12` | P0 (High) | 6 | 11 |
 | `TS_004` | Forgot Password | `FRS 4.1.12` | P2 (Low) | 7 | 25 |
